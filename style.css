@@ -1,0 +1,62 @@
+/* تنسيق الجسم الأساسي */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* استخدم خط عربي مميز لاحقًا */
+}
+
+/* تنسيق الخريطة لملء الشاشة */
+#map {
+    width: 100vw; /* 100% من عرض الشاشة */
+    height: 100vh; /* 100% من ارتفاع الشاشة */
+    position: absolute; /* للتأكد من أنها خلف كل شيء */
+    top: 0;
+    left: 0;
+}
+
+/* تنسيق الشريط الجانبي (Sidebar) */
+#sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px; /* عرض ثابت للشريط */
+    height: 100vh;
+    background: white;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* للتأكد من ظهورها فوق الخريطة */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    transition: transform 0.3s ease-out; /* حركة انزلاق ناعمة */
+    transform: translateX(100%); /* إخفائه مبدئيًا */
+}
+
+/* لجعل الشريط يظهر عند تفعيله من JS */
+#sidebar.visible {
+    transform: translateX(0);
+}
+
+#close-sidebar {
+    float: left;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #cc0000;
+}
+
+/* تنسيق الأيقونات التفاعلية (Marker Popups) */
+.intellectual-popup {
+    text-align: right;
+    direction: rtl;
+}
+.intellectual-popup h3 {
+    color: #007bff;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+.intellectual-popup a {
+    color: #28a745; /* لون أخضر للروابط */
+    font-weight: bold;
+    text-decoration: none;
+}
