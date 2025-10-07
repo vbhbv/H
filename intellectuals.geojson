@@ -5,15 +5,15 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [31.2357, 30.0333] 
+        "coordinates": [31.2357, 30.0333]
       },
       "properties": {
         "name": "نجيب محفوظ",
         "birth_year": 1911,
         "death_year": 2006,
-        "field": "أدب، رواية",
+        "field": "أدب, رواية", 
         "bio_summary": "الأديب العربي الوحيد الحاصل على جائزة نوبل في الأدب.",
-        "article_link": "articles/mahfouz.html" 
+        "article_link": "articles/mahfouz.html"
       }
     }
   ]
